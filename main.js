@@ -939,7 +939,7 @@ function getScores(i) {
         var score = textContains("今日已累积").findOne().text();
         score += '%0A四人赛：' + myScores["四人赛"] + '分';
         score += '%0A双人赛：' + myScores["双人对战"] + '分';
-        score += '%0A成长总积分：' +  textContains("成长总积分").findOne().parent().child(3).text() + '分%0A';
+        score += '%0A成长总积分：' +  textContains("成长总积分").findOne().parent().child(1).text() + '分%0A';
         log(score);
         back();
         return score;
